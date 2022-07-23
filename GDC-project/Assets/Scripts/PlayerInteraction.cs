@@ -18,13 +18,15 @@ public class PlayerInteraction : MonoBehaviour
         RaycastHit hit;
         if (Input.GetKeyDown(KeyCode.E) && Physics.Raycast(transform.position, transform.forward, out hit, rayLength) && hit.collider.CompareTag("Interactable"))
         {
-            Interact(hit);
+            Use(hit);
         }
     }
 
-    void Interact(RaycastHit hit)
+    void Use(RaycastHit hit)
     {
         print($"Interacted with item: {hit.collider.name}");
+        InteractableObject otherScript = hit.collider.gameObject.GetComponent<InteractableObject>();
+        otherScript.Interaction();
     }
 
     private void OnDrawGizmos()
