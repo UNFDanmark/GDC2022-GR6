@@ -38,6 +38,7 @@ public class NumberDisplayScript : MonoBehaviour
         if (numberDisplay.text.Equals(code))
         {
             numberDisplay.text = "acc";
+            // toggle safe UI
             // todo run code supposed to happen after safe is opened
         }
     }
