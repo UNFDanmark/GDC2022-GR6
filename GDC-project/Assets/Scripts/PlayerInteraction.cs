@@ -15,18 +15,20 @@ public class PlayerInteraction : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        RaycastHit hit;
-        if (Input.GetKeyDown(KeyCode.E) && Physics.Raycast(transform.position, transform.forward, out hit, rayLength) && hit.collider.CompareTag("Interactable"))
-        {
-            Use(hit);
-        }
+        RunInteraction();
     }
 
-    void Use(RaycastHit hit)
+    void RunInteraction()
     {
-        print($"Interacted with item: {hit.collider.name}");
-        InteractableObject otherScript = hit.collider.gameObject.GetComponent<InteractableObject>();
-        otherScript.Interaction();
+        RaycastHit hit;
+        //switch to overlap sphere instead of raycast
+        if (Input.GetKeyDown(KeyCode.E) && Physics.Raycast(transform.position, transform.forward, out hit, rayLength, LayerMask.GetMask("InteractableObject")))
+        {
+            hit.collider.gameObject.SendMessage("Interaction");
+        }
+        //print($"Interacted with item: {hit.collider.name}");
+        //InteractableObject otherScript = hit.collider.gameObject.GetComponent<InteractableObject>();
+        //otherScript.Interaction();
     }
 
     private void OnDrawGizmos()
