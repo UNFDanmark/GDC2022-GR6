@@ -1,16 +1,19 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-using TMPro;
 
-public class BookshelfScript : MonoBehaviour
+public class RoomHandler : MonoBehaviour
 {
-    TMP_Text textField;
+    public GameObject player;
+    public GameObject door1;
+    public GameObject door2;
+    public GameObject door3;
+    public GameObject door4;
 
     // Start is called before the first frame update
     void Start()
     {
-        textField = FindObjectOfType<TMP_Text>();
+        
     }
 
     // Update is called once per frame
@@ -21,6 +24,6 @@ public class BookshelfScript : MonoBehaviour
 
     public void Interaction()
     {
-        textField.text = $"There seem to be a code engraved in the back panel: 3657";
+        //player;
     }
 }

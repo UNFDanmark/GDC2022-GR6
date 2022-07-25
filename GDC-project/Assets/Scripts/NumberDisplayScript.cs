@@ -45,6 +45,7 @@ public class NumberDisplayScript : MonoBehaviour
         {
             numberDisplay.text = "acc";
             safeUI.SetActive(false);
+
             // todo run code supposed to happen after safe is opened
         }
     }
