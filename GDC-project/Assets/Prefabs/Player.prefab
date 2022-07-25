@@ -98,6 +98,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   rayLength: 1
   inventoryUI: {fileID: 0}
+  keyTexture: {fileID: 2800000, guid: b5df8198fdef6bb43b17ba853c862f57, type: 3}
+  inventorySlots: []
 --- !u!1 &2402201182210408586
 GameObject:
   m_ObjectHideFlags: 0

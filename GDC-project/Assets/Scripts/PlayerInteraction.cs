@@ -7,7 +7,9 @@ public class PlayerInteraction : MonoBehaviour
 {
     public int rayLength = 1;
     public GameObject inventoryUI;
-    public Image keyImage;
+    public Sprite keyTexture;
+    public Image[] inventorySlots;
+    int numberOfItemGained = 0;
 
     // Start is called before the first frame update
     void Start()
@@ -24,7 +26,7 @@ public class PlayerInteraction : MonoBehaviour
     void RunInteraction()
     {
         RaycastHit hit;
-        //switch to overlap sphere instead of raycast
+        // switch to overlap sphere instead of raycast
         if (Input.GetKeyDown(KeyCode.E) && Physics.Raycast(transform.position, transform.forward, out hit, rayLength, LayerMask.GetMask("InteractableObject")))
         {
             hit.collider.gameObject.SendMessage("Interaction");
@@ -36,6 +38,20 @@ public class PlayerInteraction : MonoBehaviour
         //print($"Interacted with item: {hit.collider.name}");
         //InteractableObject otherScript = hit.collider.gameObject.GetComponent<InteractableObject>();
         //otherScript.Interaction();
+    }
+
+    public void AddItem(string item)
+    {
+        switch (item)
+        {
+            case "key":
+                //inventorySlots[numberOfIemGained].color.a;
+                inventorySlots[numberOfItemGained].sprite = keyTexture;
+                break;
+            default:
+                break;
+        }
+        numberOfItemGained++;
     }
 
     private void OnDrawGizmos()

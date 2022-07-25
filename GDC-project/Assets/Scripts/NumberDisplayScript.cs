@@ -10,6 +10,7 @@ public class NumberDisplayScript : MonoBehaviour
     public AudioClip keySound;
     public string code = "3657";
     public GameObject safeUI;
+    public GameObject player;
 
     // Start is called before the first frame update
     void Start()
@@ -45,7 +46,7 @@ public class NumberDisplayScript : MonoBehaviour
         {
             numberDisplay.text = "acc";
             safeUI.SetActive(false);
-
+            player.SendMessage("AddItem", "key");
             // todo run code supposed to happen after safe is opened
         }
     }
