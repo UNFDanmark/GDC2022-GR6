@@ -18,11 +18,12 @@ public class PlayerMovement : MonoBehaviour
     void Update()
     {
         GetInput();
+        MovementHandler();
     }
 
     private void FixedUpdate()
     {
-        MovementHandler(); 
+        //MovementHandler(); 
     }
 
     void MovementHandler()
