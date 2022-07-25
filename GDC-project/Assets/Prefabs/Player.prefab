@@ -78,6 +78,12 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   movementSpeed: 5
+  characterTextures:
+  - {fileID: 2800000, guid: 3a484b3f1c6a83142ba4fa0dc61d2049, type: 3}
+  - {fileID: 2800000, guid: 85ec4601d0007b744b5a383925d3f786, type: 3}
+  - {fileID: 2800000, guid: 6e7ada02de955414c8f0c69cddaa4610, type: 3}
+  - {fileID: 2800000, guid: 3dced1e46e46a8849b635441ca3e8e0a, type: 3}
+  charcterMaterial: {fileID: 2100000, guid: 5387d92ff58fdb848b8d0dc6f617788a, type: 2}
 --- !u!114 &2402201181502017818
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -91,6 +97,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   rayLength: 1
+  inventoryUI: {fileID: 0}
 --- !u!1 &2402201182210408586
 GameObject:
   m_ObjectHideFlags: 0
@@ -152,7 +159,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: dc83fb1bd4d46e248b7c205b4b47982d, type: 2}
+  - {fileID: 2100000, guid: 5387d92ff58fdb848b8d0dc6f617788a, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
