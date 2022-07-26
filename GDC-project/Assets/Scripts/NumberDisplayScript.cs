@@ -8,7 +8,7 @@ public class NumberDisplayScript : MonoBehaviour
     TMP_Text numberDisplay;
     public AudioSource soundHandler;
     public AudioClip keySound;
-    public string code = "3657";
+    public string code = "9781";
     public GameObject safeUI;
     public GameObject player;
 
@@ -46,8 +46,8 @@ public class NumberDisplayScript : MonoBehaviour
         {
             numberDisplay.text = "acc";
             safeUI.SetActive(false);
-            player.SendMessage("AddItem", "key");
-            // todo run code supposed to happen after safe is opened
+            int whatever = 0;
+            player.SendMessage("AddItem", whatever);
         }
     }
 }

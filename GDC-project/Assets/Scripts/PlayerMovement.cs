@@ -20,13 +20,13 @@ public class PlayerMovement : MonoBehaviour
     void Update()
     {
         GetInput();
-        MovementHandler();
+        //MovementHandler();
         RotateCharacterTexture();
     }
 
     private void FixedUpdate()
     {
-        //MovementHandler();
+        MovementHandler();
     }
 
     void MovementHandler()

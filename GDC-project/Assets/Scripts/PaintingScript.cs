@@ -1,11 +1,10 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-using UnityEngine.UI;
 
-public class SafeScript : MonoBehaviour
+public class PaintingScript : MonoBehaviour
 {
-    public GameObject safeUI;
+    bool isUsed = false;
 
     // Start is called before the first frame update
     void Start()
@@ -18,22 +17,14 @@ public class SafeScript : MonoBehaviour
     {
         
     }
+
     public void Interaction(GameObject player)
     {
         // print($"Hello from: {name}");
-        ToggleVissibility();
-    }
-
-    void ToggleVissibility()
-    {
-        if (safeUI.activeSelf)
+        if (!isUsed)
         {
-            safeUI.SetActive(false);
-        }
-        else
-        {
-            safeUI.SetActive(true);
+            player.SendMessage("AddItem", 1);
+            isUsed = true;
         }
     }
-
 }
