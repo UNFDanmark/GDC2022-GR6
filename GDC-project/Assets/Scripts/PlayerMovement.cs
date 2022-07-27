@@ -4,12 +4,14 @@ using UnityEngine;
 
 public class PlayerMovement : MonoBehaviour
 {
-    public float movementSpeed = 5f;
+    public float movementSpeed = 2f;
     Rigidbody rb;
     float horizontalMovement;
     float verticalMovement;
     public Texture2D[] characterTextures;
     public Material charcterMaterial;
+    public AudioSource audioSource;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -22,16 +24,28 @@ public class PlayerMovement : MonoBehaviour
         GetInput();
         //MovementHandler();
         RotateCharacterTexture();
+        
     }
 
     private void FixedUpdate()
     {
         MovementHandler();
+        if (horizontalMovement != 0f || verticalMovement != 0f)
+        {
+            if (audioSource.isPlaying.Equals(false))
+            {
+                audioSource.Play();
+            }
+        }
+        else
+        {
+            audioSource.Stop();
+        }
     }
 
     void MovementHandler()
     {
-        Vector3 moveVector = new(horizontalMovement, rb.velocity.y, verticalMovement);
+        Vector3 moveVector = new(horizontalMovement, 0, verticalMovement); //rb.velocity.y
         moveVector = moveVector.normalized;
         rb.velocity = moveVector * movementSpeed;
     }

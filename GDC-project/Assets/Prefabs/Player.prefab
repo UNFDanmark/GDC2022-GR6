@@ -9,7 +9,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 2402201181502017816}
-  - component: {fileID: 2402201181502017817}
+  - component: {fileID: 7043097015352104211}
   - component: {fileID: 2402201181502017814}
   - component: {fileID: 2402201181502017819}
   - component: {fileID: 2402201181502017818}
@@ -37,8 +37,8 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!65 &2402201181502017817
-BoxCollider:
+--- !u!136 &7043097015352104211
+CapsuleCollider:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
@@ -47,9 +47,10 @@ BoxCollider:
   m_Material: {fileID: 0}
   m_IsTrigger: 0
   m_Enabled: 1
-  serializedVersion: 2
-  m_Size: {x: 0.9, y: 0.95, z: 0.2}
-  m_Center: {x: 0, y: 0, z: 0}
+  m_Radius: 0.5
+  m_Height: 0.95
+  m_Direction: 1
+  m_Center: {x: 0, y: 0, z: 0.01493597}
 --- !u!54 &2402201181502017814
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -78,13 +79,14 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 801dc5c1c4208f94d82467e395ab26ed, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  movementSpeed: 5
+  movementSpeed: 2
   characterTextures:
   - {fileID: 2800000, guid: 3a484b3f1c6a83142ba4fa0dc61d2049, type: 3}
   - {fileID: 2800000, guid: 85ec4601d0007b744b5a383925d3f786, type: 3}
   - {fileID: 2800000, guid: 6e7ada02de955414c8f0c69cddaa4610, type: 3}
   - {fileID: 2800000, guid: 3dced1e46e46a8849b635441ca3e8e0a, type: 3}
   charcterMaterial: {fileID: 2100000, guid: 5387d92ff58fdb848b8d0dc6f617788a, type: 2}
+  audioSource: {fileID: 8320273404793331567}
 --- !u!114 &2402201181502017818
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -118,9 +120,9 @@ AudioSource:
   OutputAudioMixerGroup: {fileID: 0}
   m_audioClip: {fileID: 8300000, guid: aa70da5a94e2c594ba68fe940ba40d64, type: 3}
   m_PlayOnAwake: 0
-  m_Volume: 1
+  m_Volume: 0.2
   m_Pitch: 1
-  Loop: 0
+  Loop: 1
   Mute: 0
   Spatialize: 0
   SpatializePostEffects: 0
