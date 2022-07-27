@@ -40,6 +40,12 @@ public class PlayerInteraction : MonoBehaviour
         RunInteraction();
     }
 
+    private void Awake()
+    {
+        Cursor.visible = false;
+            
+    }
+
     void RunInteraction()
     {
         // Creates an invisible sphere on the player with a radius of raylength
