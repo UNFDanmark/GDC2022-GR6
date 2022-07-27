@@ -2,11 +2,8 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class NoteHandler : MonoBehaviour
+public class DoorScript : MonoBehaviour
 {
-    bool isUsed = false;
-    public int itemIndex;
-
     // Start is called before the first frame update
     void Start()
     {
@@ -21,11 +18,10 @@ public class NoteHandler : MonoBehaviour
 
     public void Interaction(GameObject player)
     {
-        // print($"Hello from: {name}");
-        if (!isUsed)
+        PlayerInteraction playerScript = player.GetComponent<PlayerInteraction>();
+        if (playerScript.isKeyObtained)
         {
-            player.SendMessage("AddItem", 1);
-            isUsed = true;
+            // Do something / win the game / something
         }
     }
 }

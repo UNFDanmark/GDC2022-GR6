@@ -11,6 +11,8 @@ public class NumberDisplayScript : MonoBehaviour
     public string code = "9781";
     public GameObject safeUI;
     public GameObject player;
+    public int itemIndex;
+    bool isUsed = false;
 
     // Start is called before the first frame update
     void Start()
@@ -42,12 +44,12 @@ public class NumberDisplayScript : MonoBehaviour
     public void CheckCode()
     {
         soundHandler.PlayOneShot(keySound);
-        if (numberDisplay.text.Equals(code))
+        if (numberDisplay.text.Equals(code) && !isUsed)
         {
             numberDisplay.text = "acc";
             safeUI.SetActive(false);
-            int whatever = 0;
-            player.SendMessage("AddItem", whatever);
+            isUsed = true;
+            player.SendMessage("AddItem", itemIndex);
         }
     }
 }

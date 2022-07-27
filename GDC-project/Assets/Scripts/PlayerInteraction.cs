@@ -14,7 +14,7 @@ public class PlayerInteraction : MonoBehaviour
     List<Image> inventoryTextures;
     List<Transform> inventorySlots;
     int numberOfItemGained;
-    bool isKeyObtained;
+    public bool isKeyObtained;
 
 
     // Start is called before the first frame update
