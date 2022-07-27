@@ -24,7 +24,7 @@ public class NoteHandler : MonoBehaviour
         // print($"Hello from: {name}");
         if (!isUsed)
         {
-            player.SendMessage("AddItem", 1);
+            player.SendMessage("AddItem", itemIndex);
             isUsed = true;
         }
     }

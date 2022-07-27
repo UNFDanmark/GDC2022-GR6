@@ -5,7 +5,7 @@ using UnityEngine.UI;
 
 public class SafeScript : MonoBehaviour
 {
-    public GameObject safeUI;
+    public GameObject userInterface;
 
     // Start is called before the first frame update
     void Start()
@@ -24,15 +24,19 @@ public class SafeScript : MonoBehaviour
         ToggleVissibility();
     }
 
+
     void ToggleVissibility()
     {
-        if (safeUI.activeSelf)
+        bool isActive = userInterface.activeSelf;
+        if (isActive)
         {
-            safeUI.SetActive(false);
+            userInterface.SetActive(!isActive);
+            Cursor.visible = !isActive;
         }
         else
         {
-            safeUI.SetActive(true);
+            userInterface.SetActive(!isActive);
+            Cursor.visible = !isActive;
         }
     }
 
