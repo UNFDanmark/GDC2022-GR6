@@ -1,0 +1,67 @@
+script and story
+
+start:
+	Ugh... Where am I? Ow.. My head.. I Can't remmeber anything ... I have to get out of here.
+
+shelf + riddle:
+	Huh. This book looks weird... A self written story? ... There must be something in here.
+
+			Some Day
+	On a sunny day, the Cat had ventured out in the world to get something to eat.
+	It had packed it's waterbottle, money and of course, it's Samurai Sword.
+	When it got to town, it asked for the best place to fill its belly. 
+	It was pointed towards a restaurant called The Eating Habbit.
+	When it got there, it found a custummer that was sitting alone. 
+	It begain a chat, with the custummer, but it didn't matter what they talked about.
+	Soon they walked out of the restaurant together, still talking. 
+	When there was noone around, it drew it's weapon into the custummer. 
+	A Rat, with nothing particular, but now with a deep red colored fur.
+
+door:
+	Ugh, it's locked! How will I get out then?... There must be something in here.
+
+safe:
+	Hmm... A safe. Maybe there's something in here I can use. But whats the code?
+
+post-it 1:
+	Wait- I remember something. Wasn't I with someone before this? A friend? no... a stranger?
+
+post-it 2:
+	Hold up, I think im used to talking to strangers. I just don't think I ever talk to them more then once...
+
+post-it 3:
+	Ow, my head... hng.. I have a feeling something happened... Something bad. I really should get out. I can feel it in my gut.
+
+post-it 4:
+	No wait. I know this place.This place- Is this my house?! But... Then why do I have a feeling I shouldn't be here? ... 
+	Let's just get out.
+
+table:
+	Ugh. This looks a mess. But... It somehow makes sense...
+
+rug:
+	Huh? Why's th ecorner- Okay. Who leaves notes under a rug?... That's actually clever.
+
+trashcan:
+	Whoa, This trashcan is overflowing! Must not have been emptied in a long time. Or just scrapped a lot of ideas. It must be perfect.
+
+painting:
+	Huh. I think ive seen this one before. I always hated the way the mustache lookes...
+
+key:
+	Yes!! It Worked! Now what do we have here- A Key! I can get out now I- Wait. No- No wait I- I remember now I- Shit. I have to get out.
+	Get out now! Before it's too late- Shit.
+
+end:
+	out out out out-
+
+	[police] FREEZE! GET DOWN! HANDS WHERE WE CAN SEE THEM!
+
+	... Shit.
+	
+	[police] It's -- O'clock and your'e under arrest, for the murders of multiple civilians. You have the right to remain scilent, 
+	everything you say, can be used against you in court.
+
+
+
+						E N D.
