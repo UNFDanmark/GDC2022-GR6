@@ -8,6 +8,15 @@ public class PaintingScript : MonoBehaviour
     public int itemIndex;
     public Vector3 destination;
     bool needsToMove = false;
+    public AudioClip clip;
+    public AudioSource audioSource;
+
+    private void Start()
+    {
+        audioSource = gameObject.AddComponent<AudioSource>();
+        audioSource.volume = 1f;
+    }
+
 
     private void FixedUpdate()
     {
@@ -22,6 +31,7 @@ public class PaintingScript : MonoBehaviour
         if (!isUsed)
         {
             needsToMove = true;
+            audioSource.PlayOneShot(clip);
             player.SendMessage("AddItem", itemIndex);
             isUsed = true;
         }

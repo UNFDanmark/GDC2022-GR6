@@ -13,12 +13,12 @@ public class BookshelfScript : MonoBehaviour
     private void Start()
     {
         audioSource = gameObject.AddComponent<AudioSource>();
+        audioSource.volume = 1f;
     }
 
     public void Interaction(GameObject player)
     {
         ToggleVissibility();
-        audioSource.volume = 0.25f;
         audioSource.PlayOneShot(bookClip);
     }
 

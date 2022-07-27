@@ -515,6 +515,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   itemIndex: 1
   destination: {x: 5, y: 2.8, z: 3}
+  clip: {fileID: 8300000, guid: 90f5d897598a8c146b597deb6abfb93a, type: 3}
+  audioSource: {fileID: 0}
 --- !u!1 &84608827
 GameObject:
   m_ObjectHideFlags: 0
@@ -1465,7 +1467,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 241050901}
   m_LocalRotation: {x: 0.7071068, y: 0, z: 0, w: 0.7071068}
-  m_LocalPosition: {x: 0, y: 4.5, z: 2.5}
+  m_LocalPosition: {x: 0, y: 4.5, z: 2}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -5107,7 +5109,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   soundHandler: {fileID: 1243106627}
   keySound: {fileID: 8300000, guid: 4804e35db48e0ab4cabcc923b3c09195, type: 3}
-  code: 9781
+  code: 9871
   safeUI: {fileID: 180256695}
   player: {fileID: 1871378166}
   itemIndex: 0
@@ -7545,7 +7547,7 @@ PrefabInstance:
     - target: {fileID: 2402201181502017816, guid: d32b8628ce04b2f49872cbb42e2764e7,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: 3.952
+      value: -0.02
       objectReference: {fileID: 0}
     - target: {fileID: 2402201181502017816, guid: d32b8628ce04b2f49872cbb42e2764e7,
         type: 3}
@@ -7555,7 +7557,7 @@ PrefabInstance:
     - target: {fileID: 2402201181502017816, guid: d32b8628ce04b2f49872cbb42e2764e7,
         type: 3}
       propertyPath: m_LocalPosition.z
-      value: 2.16
+      value: 2.782
       objectReference: {fileID: 0}
     - target: {fileID: 2402201181502017816, guid: d32b8628ce04b2f49872cbb42e2764e7,
         type: 3}
