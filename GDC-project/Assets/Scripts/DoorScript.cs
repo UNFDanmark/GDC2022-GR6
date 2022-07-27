@@ -21,6 +21,7 @@ public class DoorScript : MonoBehaviour
         PlayerInteraction playerScript = player.GetComponent<PlayerInteraction>();
         if (playerScript.isKeyObtained)
         {
+            print("You escaped");
             // Do something / win the game / something
         }
     }
