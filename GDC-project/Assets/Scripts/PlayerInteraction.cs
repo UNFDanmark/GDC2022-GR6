@@ -15,6 +15,8 @@ public class PlayerInteraction : MonoBehaviour
     List<Transform> inventorySlots;
     int numberOfItemGained;
     public bool isKeyObtained;
+    public AudioSource audioSource;
+    public AudioClip gainNoteClip;
 
 
     // Start is called before the first frame update
@@ -81,18 +83,22 @@ public class PlayerInteraction : MonoBehaviour
             case 1:
                 inventoryTextures[numberOfItemGained].color = color;
                 inventoryTextures[numberOfItemGained].sprite = noteTextures[0];
+                audioSource.PlayOneShot(gainNoteClip);
                 break;
             case 2:
                 inventoryTextures[numberOfItemGained].color = color;
                 inventoryTextures[numberOfItemGained].sprite = noteTextures[1];
+                audioSource.PlayOneShot(gainNoteClip);
                 break;
             case 3:
                 inventoryTextures[numberOfItemGained].color = color;
                 inventoryTextures[numberOfItemGained].sprite = noteTextures[2];
+                audioSource.PlayOneShot(gainNoteClip);
                 break;
             case 4:
                 inventoryTextures[numberOfItemGained].color = color;
                 inventoryTextures[numberOfItemGained].sprite = noteTextures[3];
+                audioSource.PlayOneShot(gainNoteClip);
                 break;
             default:
                 break;

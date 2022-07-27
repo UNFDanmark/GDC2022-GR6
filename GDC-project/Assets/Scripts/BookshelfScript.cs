@@ -6,25 +6,20 @@ using TMPro;
 public class BookshelfScript : MonoBehaviour
 {
     public GameObject userInterface;
+    public AudioSource audioSource;
+    public AudioClip bookClip;
     public TMP_Text textField;
 
-    // Start is called before the first frame update
-    void Start()
+    private void Start()
     {
-
-    }
-
-    // Update is called once per frame
-    void Update()
-    {
-        
+        audioSource = gameObject.AddComponent<AudioSource>();
     }
 
     public void Interaction(GameObject player)
     {
-        // print($"Hello from: {name}");
-        //textField.text = $"There seem to be a code engraved in the back panel: 9781";
         ToggleVissibility();
+        audioSource.volume = 0.25f;
+        audioSource.PlayOneShot(bookClip);
     }
 
     void ToggleVissibility()

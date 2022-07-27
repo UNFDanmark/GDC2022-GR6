@@ -23,6 +23,7 @@ public class PlayerMovement : MonoBehaviour
     {
         GetInput();
         //MovementHandler();
+        PlayerSoundHandler();
         RotateCharacterTexture();
         
     }
@@ -30,17 +31,6 @@ public class PlayerMovement : MonoBehaviour
     private void FixedUpdate()
     {
         MovementHandler();
-        if (horizontalMovement != 0f || verticalMovement != 0f)
-        {
-            if (audioSource.isPlaying.Equals(false))
-            {
-                audioSource.Play();
-            }
-        }
-        else
-        {
-            audioSource.Stop();
-        }
     }
 
     void MovementHandler()
@@ -77,6 +67,21 @@ public class PlayerMovement : MonoBehaviour
             case 1:
                 charcterMaterial.mainTexture = characterTextures[1];
                 break;
+        }
+    }
+
+    void PlayerSoundHandler()
+    {
+        if (horizontalMovement != 0f || verticalMovement != 0f)
+        {
+            if (audioSource.isPlaying.Equals(false))
+            {
+                audioSource.Play();
+            }
+        }
+        else
+        {
+            audioSource.Stop();
         }
     }
 }

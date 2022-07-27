@@ -104,10 +104,12 @@ MonoBehaviour:
   keyTexture: {fileID: 21300000, guid: b5df8198fdef6bb43b17ba853c862f57, type: 3}
   noteTextures:
   - {fileID: 21300000, guid: 23116fb6873c33848ac19d4a00576781, type: 3}
-  - {fileID: 21300000, guid: af3318ad50187cb46b10bb37d7b45fea, type: 3}
+  - {fileID: 21300000, guid: 98aa194df4c0bb0408ca8222adb584f3, type: 3}
   - {fileID: 21300000, guid: 9c8ade93e22ce8a4ca61f5aa346c290c, type: 3}
   - {fileID: 21300000, guid: dcc5760e863080a4a8c4ffad17193a77, type: 3}
   isKeyObtained: 0
+  audioSource: {fileID: 8320273404793331567}
+  gainNoteClip: {fileID: 8300000, guid: 48365dc6bd0389245946afbc3e01e856, type: 3}
 --- !u!82 &8320273404793331567
 AudioSource:
   m_ObjectHideFlags: 0
