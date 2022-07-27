@@ -43,7 +43,7 @@ public class PlayerInteraction : MonoBehaviour
     private void Awake()
     {
         Cursor.visible = false;
-            
+        // Maybe add lockstate too
     }
 
     void RunInteraction()
