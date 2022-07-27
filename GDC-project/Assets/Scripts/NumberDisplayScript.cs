@@ -6,7 +6,11 @@ using TMPro;
 public class NumberDisplayScript : MonoBehaviour
 {
     TMP_Text numberDisplay;
-    public string code = "365";
+    public AudioSource soundHandler;
+    public AudioClip keySound;
+    public string code = "9781";
+    public GameObject safeUI;
+    public GameObject player;
 
     // Start is called before the first frame update
     void Start()
@@ -22,7 +26,8 @@ public class NumberDisplayScript : MonoBehaviour
     
     public void AddNumber(int number)
     {
-        if (numberDisplay.text.Length < 3)
+        soundHandler.PlayOneShot(keySound);
+        if (numberDisplay.text.Length < code.Length)
         {
             numberDisplay.text += number.ToString();
         }
@@ -30,16 +35,19 @@ public class NumberDisplayScript : MonoBehaviour
 
     public void ClearDisplay()
     {
+        soundHandler.PlayOneShot(keySound);
         numberDisplay.text = "";
     }
 
     public void CheckCode()
     {
+        soundHandler.PlayOneShot(keySound);
         if (numberDisplay.text.Equals(code))
         {
             numberDisplay.text = "acc";
-            // toggle safe UI
-            // todo run code supposed to happen after safe is opened
+            safeUI.SetActive(false);
+            int whatever = 0;
+            player.SendMessage("AddItem", whatever);
         }
     }
 }

@@ -19,8 +19,9 @@ public class BookshelfScript : MonoBehaviour
         
     }
 
-    public void Interaction()
+    public void Interaction(GameObject player)
     {
-        textField.text = "There seem to be a code engraved in the back panel: 365";
+        // print($"Hello from: {name}");
+        textField.text = $"There seem to be a code engraved in the back panel: 9781";
     }
 }
