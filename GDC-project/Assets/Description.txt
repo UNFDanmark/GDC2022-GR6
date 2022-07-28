@@ -1,1 +1,1 @@
-A very short escaperoom like game.
+"This room" is a very short escaperoom inspired game about geting out of a room. It uses a mixture of 2d and 3d art for it's style.

@@ -7608,25 +7608,25 @@ PrefabInstance:
         type: 3}
       propertyPath: noteTextures.Array.data[0]
       value: 
-      objectReference: {fileID: 21300000, guid: c698c475330b9e14bb67068c21649af3,
+      objectReference: {fileID: 21300000, guid: 5100516dbfbd6ce459cf4e4fe08955e6,
         type: 3}
     - target: {fileID: 2402201181502017818, guid: d32b8628ce04b2f49872cbb42e2764e7,
         type: 3}
       propertyPath: noteTextures.Array.data[1]
       value: 
-      objectReference: {fileID: 21300000, guid: 0e6ef1b994da48142bc3a409b9897e15,
+      objectReference: {fileID: 21300000, guid: 130f494d1c0cfc646953643dac37d8dc,
         type: 3}
     - target: {fileID: 2402201181502017818, guid: d32b8628ce04b2f49872cbb42e2764e7,
         type: 3}
       propertyPath: noteTextures.Array.data[2]
       value: 
-      objectReference: {fileID: 21300000, guid: 38a8be1d06bf39847a2e00b4282d1186,
+      objectReference: {fileID: 21300000, guid: 548b07ceb09a84f42b961089d7ea4447,
         type: 3}
     - target: {fileID: 2402201181502017818, guid: d32b8628ce04b2f49872cbb42e2764e7,
         type: 3}
       propertyPath: noteTextures.Array.data[3]
       value: 
-      objectReference: {fileID: 21300000, guid: 65902013f7aee0f499247f8f37d3b98f,
+      objectReference: {fileID: 21300000, guid: b0b326aaf492f4e4bbad227b3bd8af9e,
         type: 3}
     - target: {fileID: 2402201181502017818, guid: d32b8628ce04b2f49872cbb42e2764e7,
         type: 3}
