@@ -11,6 +11,8 @@ public class PlayerMovement : MonoBehaviour
     public Texture2D[] characterTextures;
     public Material charcterMaterial;
     public AudioSource audioSource;
+    public GameObject safeUI;
+    public GameObject bookUI;
 
     // Start is called before the first frame update
     void Start()
@@ -21,11 +23,17 @@ public class PlayerMovement : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        GetInput();
-        //MovementHandler();
-        PlayerSoundHandler();
-        RotateCharacterTexture();
-        
+        if (safeUI.activeSelf.Equals(false) && bookUI.activeSelf.Equals(false))
+        {
+            GetInput();
+            RotateCharacterTexture();
+            PlayerSoundHandler();
+        }
+        else
+        {
+            audioSource.Stop();
+
+        }
     }
 
     private void FixedUpdate()
